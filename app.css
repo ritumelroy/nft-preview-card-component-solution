@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+p {
+  line-height: 1.5em;
+  font-weight: 200;
+}
+
+img {
+  position: relative;
+  bottom: -3px;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  color: hsl(215, 51%, 70%);
+  border-radius: 7px;
+}
+
+.image {
+  height: 325px;
+  width: 325px;
+
+  background-color: hsl(178, 100%, 50%);
+  background-position-x: center;
+  background-position-y: center;
+  background-image: url("images/icon-view.svg");
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  margin: 20px;
+  margin-bottom: none;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  border-radius: 6px;
+
+  /* border-radius: 7px;
+    margin: 20px;
+    margin-bottom: none; */
+}
+
+.main {
+  margin: 0 20px;
+  font-size: 300;
+  padding-bottom: 1.7em;
+  border-bottom: 1px solid rgba(139, 172, 218, 0.2);
+}
+
+.heading {
+  font-weight: 600;
+  margin: 0.5em auto 1em;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+}
+
+.time {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.time img {
+  margin-right: 5px;
+}
+.eth {
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+
+.credits {
+  margin-top: 0;
+  padding: 5px 20px;
+}
+
+.credits img {
+  height: 30px;
+  width: auto;
+  border: thin solid white;
+  border-radius: 50%;
+  position: relative;
+  bottom: -10px;
+  margin-right: 10px;
+}
+
+.credits span:hover,
+.heading:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.image img:hover {
+  opacity: 0.2;
+  cursor: pointer;
+  transition: opacity 90ms ease-in-out;
+}
+
+.attribution {
+  margin: 15px;
+}
